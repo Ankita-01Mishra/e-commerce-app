@@ -1,38 +1,61 @@
-.App {
+/* HEADER */
+.heading{
+  text-align: center;
+  color: #FF4252;
+}
+/* NAVBAR */
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.navlink{
+  text-decoration: none;
+  font-weight: 700;
+}
+.navlink:hover{
+  font-size: 1.2rem;
+  transition: all 0.2 ease-in-out;
+}
+
+/*MACBOOK*/
+.macFlex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.macbook{
+  width: 310px;
+  height: 360px;
+  border: 2px solid black;
+  margin: 50px 20px 20px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Slider */
+.imageSlider{
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  position:relative;
+  top: 1em;
+  z-index: -1;
+  box-shadow: 10px 13px 395px 0px rgba(219,203,203,0.75);
+  transition: imgcall 5s linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*CARD*/
+.flexBox{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main_container{
+  height: 340px;
+  width: 330px;
+  border: 2px solid black;
+  text-align: center;
+  margin: 30px;
 }
